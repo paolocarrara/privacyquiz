@@ -1,0 +1,27 @@
+<ion-content padding [ngClass]="{'correct-answer': isRight, 'wrong-answer': !isRight}">
+  <div class="title">
+
+    <div *ngIf='isRight'>
+      Correto!
+    </div>
+
+    <div *ngIf='!isRight'>
+      Errado!
+    </div>
+
+  </div>
+
+  <div class='extra'>
+    {{ extra }}
+  </div>
+
+  <ion-footer>
+    <button
+    type="button"
+    name="button"
+    (click)='dismiss()'>
+      <ion-icon name="ios-close-circle-outline"></ion-icon>
+    </button>
+  </ion-footer>
+
+</ion-content>

@@ -1,0 +1,54 @@
+<ion-content>
+  <ion-slides>
+    <ion-slide id='first-page'>
+      <h1 class='title'>
+        Teste seus conhecimentos sobre privacidade na internet nesse quiz feito especialmente sobre o assunto!
+      </h1>
+
+      <p class='sub-title'>
+        Você conhece seus direitos e deveres na rede? Entende como se manter seguro nas midias sociais? Não!? Se tem dúvidas ou quer saber mais sobre como usar a Internet com seguraça então continue e entenda melhor o mundo virtual que habitamos!
+      </p>
+
+      <button
+        class='start active'
+        (click)='goToNextQuery()'>
+          Iniciar Quiz
+      </button>
+    </ion-slide>
+
+    <ion-slide *ngFor='let query of quiz' [ngStyle]="{'background-color': query.color}">
+
+      <h1 class='title'>
+        {{ query.title }}
+      </h1>
+
+      <div class='tip'>
+        Selecione uma opção
+      </div>
+
+      <form>
+        <div *ngFor='let alternative of query.alternatives' class='option'>
+          <input
+            type='radio'
+            [id]="alternative.number+'+'+query.number"
+            [name]='query.number'
+            [value]='alternative.number'
+            [(ngModel)]='answers[query.number]'
+            />
+
+          <label [for]="alternative.number+'+'+query.number">
+            {{ alternative.title }}
+          </label>
+        </div>
+      </form>
+
+      <button
+        class='confirm'
+        (click)='verify(query.number)'
+        [ngClass]="{'active': answers[query.number]}"
+        [ngStyle]="{'color': query.color}">Próxima
+      </button>
+    </ion-slide>
+    <!-- Falta criar o slide final falando o total de acertos do usuário. -->
+  </ion-slides>
+</ion-content>
