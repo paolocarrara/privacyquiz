@@ -2,22 +2,25 @@
   <ion-slides>
     <ion-slide id='first-page'>
       <h1 class='title'>
-        Teste seus conhecimentos sobre privacidade na internet nesse quiz feito especialmente sobre o assunto!
+        Teste seus conhecimentos sobre privacidade na internet nesse quiz feito
+        especialmente sobre o assunto!
       </h1>
 
       <p class='sub-title'>
-        Você conhece seus direitos e deveres na rede? Entende como se manter seguro nas midias sociais? Não!? Se tem dúvidas ou quer saber mais sobre como usar a Internet com seguraça então continue e entenda melhor o mundo virtual que habitamos!
+        Você conhece seus direitos e deveres na rede? Entende como se manter
+        seguro nas midias sociais? Não!? Se tem dúvidas ou quer saber mais sobre
+        como usar a Internet com seguraça então continue e entenda melhor o
+        mundo virtual que habitamos!
       </p>
 
       <button
         class='start active'
         (click)='goToNextQuery()'>
-          Iniciar Quiz
+        Iniciar Quiz
       </button>
     </ion-slide>
 
     <ion-slide *ngFor='let query of quiz' [ngStyle]="{'background-color': query.color}">
-
       <h1 class='title'>
         {{ query.title }}
       </h1>
@@ -46,9 +49,45 @@
         class='confirm'
         (click)='verify(query.number)'
         [ngClass]="{'active': answers[query.number]}"
-        [ngStyle]="{'color': query.color}">Próxima
+        [ngStyle]="{'color': query.color}">
+        Próxima
       </button>
     </ion-slide>
-    <!-- Falta criar o slide final falando o total de acertos do usuário. -->
+
+    <ion-slide id='last-page'>
+      <h1 class='title'>
+        Quiz encerrado!
+      </h1>
+
+      <p class='sub-title'>
+        Você teve <span>{{ countTotalOfRightAnswers() }}</span> acertos de {{ quiz.length }} perguntas
+      </p>
+
+      <p *ngIf='countTotalOfRightAnswers() <= 3' class='content'>
+        Humm.. você não foi muito bem, mas não tem problema a nossa seção de referências pode te ajudar a aprender mais e te manter seguro!
+      </p>
+
+      <p *ngIf='countTotalOfRightAnswers() >= 4 && countTotalOfRightAnswers() <= 6' class='content'>
+        Muito bom, você sabe bastante segurança e privacidade na internet mas ainda tem alguns pontos para aprimorar, para isso pode usar nossas referências, basta clicar no botão abaixo.
+      </p>
+
+      <p *ngIf='countTotalOfRightAnswers() >= 7 && countTotalOfRightAnswers() <= 8' class='content'>
+        Ótimo, você mostrou que tem muito conhecimento sobre segurança e privacidade na internet, para mais informações entre em nossas referências e aprenda ainda mais!
+      </p>
+
+      <button
+        type="button"
+        name="button"
+        (click)='goToStart()'>
+        Refazer
+      </button>
+
+      <button
+        type="button"
+        name="button"
+        (click)='showReferences()'>
+        Referências
+      </button>
+    </ion-slide>
   </ion-slides>
 </ion-content>

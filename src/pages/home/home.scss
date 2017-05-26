@@ -34,13 +34,13 @@ page-home {
   ion-slide .title {
     font-size: 1.9rem;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
-    text-align: justify;
+    text-align: left;
   }
 
   ion-slide .option {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
-    text-align: justify;
+    text-align: left;
   }
 
   ion-slide .option label {
@@ -85,19 +85,20 @@ page-home {
 
   // First page
   #first-page {
-
+    background-color: #00AAED;
   }
 
   #first-page .title {
     font-size: 2rem;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
+    text-align: center;
   }
 
   #first-page .sub-title {
+    margin-top: 2em;
     font-size: 1.8rem;
     font-family: 'Raleway', sans-serif;
-    text-align: justify;
   }
 
   #first-page .start {
@@ -111,5 +112,55 @@ page-home {
     background-color: rgba(255, 255, 255, 1);
     margin-bottom: 0.5em;
     box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  // Last page
+  #last-page {
+    background-color: #00AAED;
+  }
+
+  #last-page .title {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  #last-page .sub-title {
+    font-size: 3.5rem;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  #last-page .sub-title span {
+    background-color: #FFF;
+    border-radius: 4px;
+    color: #00AAED;
+    padding: 0em 0.3em;
+  }
+
+  #last-page .content {
+    background-color: #FFF;
+    font-size: 1.5rem;
+    color: #333;
+    font-family: 'Raleway', sans-serif;
+    padding: 1em;
+    border-radius: 4px;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  #last-page button {
+    text-align: center;
+    border: none;
+    font-size: 1.8rem;
+    padding: 0.5em;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 2px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: inline-block;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0);
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
   }
 }

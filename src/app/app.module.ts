@@ -1,19 +1,23 @@
-import { NgModule, ErrorHandler } from '@angular/core';
+import { NgModule, ErrorHandler, enableProdMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { HomePage } from '../pages/home/home';
-import { Extra } from '../pages/extra/extra';
+import { ExtraPage } from '../pages/extra/extra';
+import { ReferencesPage } from '../pages/references/references';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
+enableProdMode();
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    Extra
+    ExtraPage,
+    ReferencesPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +27,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    Extra
+    ExtraPage,
+    ReferencesPage
   ],
   providers: [
     StatusBar,
