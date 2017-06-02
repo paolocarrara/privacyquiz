@@ -1,3 +1,16 @@
 <ion-content padding>
-  <a *ngFor='let reference of references' [href]='reference.address'>{{ reference.address }}</a>
+  <div class="reference" *ngFor='let reference of references'>
+    <div class="text">
+      {{ reference.text }}
+    </div>
+    <div class="author" *ngIf='reference.author'>
+      {{ reference.author }}
+    </div>
+    <a [href]='reference.address' *ngIf='reference.address'>
+      {{ reference.address }}
+    </a>
+    <div class="date" *ngIf='reference.date'>
+      Acessado em: {{ reference.date }}
+    </div>
+  </div>
 </ion-content>

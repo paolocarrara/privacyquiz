@@ -82,7 +82,7 @@ var quiz = [
         correct: false
       }
     ],
-    extra: 'Esse é um texto com informações adicionais que se relacionam com a pergunta feita.',
+    extra: 'O Facebook cruza uma base de dados genérica sobre a distribuição de renda de um local fornecida por uma empresa (no Brasil, trata-se do grupo Experian) com sua própria base de dados, que inclui hábitos de navegação dos usuários. A partir do cruzamento dessas duas bases, empresas anunciantes conseguem alcançar grupos específicos de renda aproximada. De forma similar, Twitter e Google utilizam informações sobre o comportamento dos usuários online para direcionar publicidade personalizada.',
     color: '#6F00DC'
   },
 
@@ -111,7 +111,7 @@ var quiz = [
         correct: false
       }
     ],
-    extra: 'Esse é um texto com informações adicionais que se relacionam com a pergunta feita.',
+    extra: 'Faz parte do conceito de privacidade excluir do conhecimento de terceiros aquilo que só pertence a você. Por isso, em computadores de uso compartilhado, vale a pena criar diferentes contas. Além disso, é importante baixar programas e aplicativos somente de fontes confiáveis e que sejam bem avaliados. Porém, essas dicas são de pouca valia se seu computador está desprovido da versão mais atual dos programas instalados. As atualizações liberadas comumente contém melhorias na segurança dos programas.',
     color: '#6F00DC'
   },
 
@@ -140,7 +140,7 @@ var quiz = [
         correct: false
       }
     ],
-    extra: 'Esse é um texto com informações adicionais que se relacionam com a pergunta feita.',
+    extra: 'Nunca responda e mails que solicitam recadastramento de senhas, dados de conta bancária, de cartão de crédito, prêmios ou outros que pareçam suspeitos. Muitos spams tentam justificar o abuso, alegando que é possível sair da lista de divulgação, entretanto nem sempre esse recurso funciona. A prática mais efetiva nesse caso é reportar o email como "spam" ao seu provedor de e mail ou adicionar o remetente ou domínio do remetente para sua lista de "Bloqueados"',
     color: '#6F00DC'
   },
 
@@ -169,7 +169,7 @@ var quiz = [
         correct: false
       }
     ],
-    extra: 'Esse é um texto com informações adicionais que se relacionam com a pergunta feita.',
+    extra: 'Serviços de armazenamento e sincronização de dados online como o Dropbox, Google Drive e SkyDrive estão entre as melhores inovações na história da internet. A conveniência de ter suas últimas fotos sempre disponíveis no Dropbox ou seus documentos no iCloud é fantástica, mas tenha em mente que muitos de seus dados serão armazenados em servidores de terceiros, que podem não ter criptografia ou estar protegidos por um sistema além de seu controle. Se você tem informações importantes, como dados bancários ou documentos da empresa, que precisam ser sincronizadas entre dispositivos, a melhor opção é usar um serviço de armazenamento na nuvem criptografado.',
     color: '#6F00DC'
   },
   {
@@ -197,7 +197,7 @@ var quiz = [
         correct: false
       },
     ],
-    extra: 'Esse é um texto com informações adicionais que se relacionam com a pergunta feita.',
+    extra: 'A explicação sobre o produto e como utilizá-lo é apenas uma parte dos Termos, sendo necessário também que esses documentos apontem a conduta esperada e necessária do usuário para a manutenção e utilização do produto ou serviço. No caso de sites, aplicativos e games deverão ser previstos os atos passíveis de exclusão do cliente/usuário com ou sem aviso prévio, como por exemplo, nos casos de tentativas de fraude, chargeback e pirataria. Já no caso de redes sociais, temos como exemplo os casos de postagens contendo informações agressivas, condutas imorais e ilegais, dentre outras.',
     color: '#6F00DC'
   },
   {
@@ -225,7 +225,7 @@ var quiz = [
         correct: false
       }
     ],
-    extra: 'Esse é um texto com informações adicionais que se relacionam com a pergunta feita.',
+    extra: 'Permitir que seus dados sejam salvos pelo navegador facilita a vida de hackers, principalmente se suas atualizações não estiverem em dia. Vale a pena manter o navegador sempre atualizado e utilizar o modo de navegação anônima para navegar sem deixar rastros.',
     color: '#6F00DC'
   }
 ];

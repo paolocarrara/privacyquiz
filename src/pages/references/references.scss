@@ -3,4 +3,24 @@ page-references {
     display: block;
     margin: 0.5em 0;
   }
+
+  .reference {
+    margin-top: 1.5em;
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 0.8em;
+  }
+
+  .reference .text {
+    font-weight: bold;
+    font-family: Raleway, sans-serif;
+  }
+
+  .reference .author {
+
+  }
+
+  .reference .date {
+    font-size: 0.8em;
+    color: #656768;
+  }
 }
